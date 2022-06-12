@@ -13,7 +13,10 @@
        for(int i=0;i<num;i++){
             scanf("%s",production[i]);
        }
+
+
        for(int i=0;i<num;i++){
+
             printf("\nGRAMMAR : : : %s",production[i]);
            non_terminal=production[i][0];
             if(non_terminal==production[i][index]) {
@@ -27,6 +30,7 @@
                       printf("%c->%c%c\'",non_terminal,beta,non_terminal);
                       printf("\n%c\'->%c%c\'|E\n",non_terminal,alpha,non_terminal);
                  }
+
                  else
                      printf(" can't be reduced\n");
            }
